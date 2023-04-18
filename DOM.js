@@ -14,7 +14,7 @@
 /*
 class selector
 */
-console.log(document.getElementsByClassName("thirdChild").getAttribute("id"));
+console.log(document.getElementsByClassName("thirdChild"));
 //manipulating span tag
 const  thisOne=document.getElementsByTagName("span");
 thisOne[0].style.color="yellow";
@@ -26,4 +26,20 @@ mybtn.style.backgroundColor="yellow";
 mybtn.style.padding="2vmax 5vmax";
 mybtn.style.cursor="pointer";
 console.log(mybtn.getAttribute("id"));
+//set attribute
+mybtn.setAttribute("id","MyBtn");
+/*
 
+Query Selector
+
+*/
+const btn=document.querySelector(".thirdChild");
+btn.innerText="vijay"
+//create html elements
+function bringMeHeading(){
+const h2=document.createElement("h2");
+document.querySelector("body").prepend(h2);
+// or
+// document.body.append(h2);
+h2.innerText="WELCOME TO WORLD"
+}
