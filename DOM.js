@@ -36,10 +36,25 @@ Query Selector
 const btn=document.querySelector(".thirdChild");
 btn.innerText="vijay"
 //create html elements
+// btn.onclick=bringMeHeading;
+const myBtn=document.querySelectorAll("button");
+myBtn[0].onclick=bringMeHeading;
+console.log(myBtn[0]);
+
+myBtn.onclick=bringMeHeading;
 function bringMeHeading(){
 const h2=document.createElement("h2");
 document.querySelector("body").prepend(h2);
 // or
 // document.body.append(h2);
 h2.innerText="WELCOME TO WORLD"
+
 }
+
+// function DeleteHeading(){
+//   // const h2=document.createElement("h2");
+  
+//   // or
+//   // document.body.append(h2);
+//   h2.remove();
+//   }
