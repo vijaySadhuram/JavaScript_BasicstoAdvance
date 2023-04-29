@@ -46,6 +46,107 @@ person.lastname="sadhuram"
 ------------------------------------------
 keyword-->new Object()
 
+Example:
+
+const person = new Object();
+
+person.firstName = "John";
+
+person.lastName = "Doe";
+
+person.age = 50;
+
+person.eyeColor = "blue";
+
+1.JavaScript objects are mutable.
+
+Any changes to a copy of an object will also change the original object:
+
+For example:
+
+const person={
+firstname:"vaijay"
+age:10;
+}
+const x=person;// it referenc if we make chages on the x it will changes on person also
+
+
+JavaScript Properties
+--------------------------------------
+objectname.property// person.age// access the properties
+
+person["age"]
+
+
+-----------------------
+JavaScript for...in Loop
+------------------------
+
+
+const person={
+    firstname:"vijay",
+    lastname:"sadhuram"
+}
+// const x=person;
+
+// x.firstname="suresh"
+// console.log(x);
+// console.log(person)
+
+for (let variable in person){
+    console.log( variable);//to name 
+    console.log(person[varible])//to get value or properties
+}
+
+---------------
+how to add new property
+-----------------
+
+person.address="Hyderabad"
+
+Deleting Properties
+
+delete person.age;
+
+delete person.firstname;
+
+console.log(person)
+
+
+ouptput:
+
+{ lastname: 'sadhuram' }
+
+or
+
+delete person["age"];
+--------------------------
+Nested Objects
+-------------------------------
+
+myObj = {
+  name:"John",
+  age:30,
+  cars: {
+    car1:"Ford",
+    car2:"BMW",
+    car3:"Fiat"
+  }
+}
+
+
+You can access nested objects using the dot notation or the bracket notation:
+
+myObj.cars.car2;
+
+or
+
+myObj[cars][car1];
+
+
+
+
+
 
 
 
