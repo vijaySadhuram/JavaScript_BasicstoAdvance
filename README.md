@@ -147,6 +147,34 @@ myObj[cars][car1];
 
 
 
+Local  storage vs Session storage
+------------------------------------
+const btn=document.getElementById("mybtn");
+
+const myinput=document.getElementById("myInput");
+
+const clickbtn=()=>{
+
+sessionStorage.setItem("key1",myinput.value);// store in session
+
+alert(myinput.value)
+
+   
+    // console.log(myinput.value);
+
+}
+
+sessionStorage.setItem("key1",myinput.value);
+
+btn.addEventListener("click",clickbtn)
+
+// console.log(sessionStorage.length);
+
+
+
+
+
+
 
 
 
