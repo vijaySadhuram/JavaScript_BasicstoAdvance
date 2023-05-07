@@ -173,6 +173,54 @@ btn.addEventListener("click",clickbtn)
 
 
 
+const a={
+
+firstname:"vijay",
+
+lastname:"sadhuram"
+    
+
+}
+
+let b=a;
+
+b.firstname="ram";
+
+console.log(b);//
+
+console.log(a);
+
+Output:
+
+{ firstname: 'ram', lastname: 'sadhuram' }
+{ firstname: 'ram', lastname: 'sadhuram' }
+
+Factory function in JS
+--------------------------------------
+function printAvg(a,b){
+
+return {height: a,
+
+wight:b,
+sum:()=>{
+console.log(height+wight);
+}
+}
+
+}
+
+console.log(printAvg(10,20))
+
+output:
+
+{ height: 10, wight: 20, sum: [Function: sum] }
+
+Constructor function
+--------------------------------
+
+
+
+
 
 
 
