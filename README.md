@@ -215,8 +215,24 @@ output:
 
 { height: 10, wight: 20, sum: [Function: sum] }
 
-Constructor function
+Constructor in JS
 --------------------------------
+
+Example:
+
+function Person(firstname,lastnmae,age){
+
+this.firstname=firstname;
+
+this.lastname=lastname;
+
+this.age=age;
+
+}
+
+add proprties
+
+Person.prototype.nationality="indian";
 
 
 
