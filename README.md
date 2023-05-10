@@ -160,6 +160,28 @@ or
 
 myObj[cars][car1];
 
+# Object Prototypes
+
+Every object in JavaScript inherits all its properties (including methods) from the Object.prototype. This means that the basic structure 
+
+of any newly declared object is inherited from Object.prototype - in simple words, the Object.prototype acts as a skeleton from which 
+
+every object is built.
+
+OBJECTS ARE PASSED AS REFERENCE AND NOT AS VALUES (i.e. not copied)
+
+Example:
+                                        const person={
+                                        'name':['vijay','sadhuram'],
+                                         age:20,
+                                         mobileno:'94u3'
+                                         }
+
+                                       const a=person;
+                                       a.lastname="sure"
+                                       console.log(person);
+                                       console.log(a);
+
 
 # Local  storage vs Session storage
 
