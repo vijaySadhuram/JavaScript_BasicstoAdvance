@@ -1,20 +1,16 @@
-# JavaScript_BasicstoAdvance
---
-Execute index.html
+# JavaScript important topics
 
-JS objects
------------------------------------------------
+# JS objects
 
 1.Objects may conatin many value
 2.can written as name :variable pair
-------------------
-Object Methods
------------------------
+
+# Object Methods
 
 1.Methods are actions that can be performed on objects.
 
-Creating a JavaScript Object
--------------------------------------
+# Creating a JavaScript Object
+
 
 With JavaScript, you can define and create your own objects.
 
@@ -29,21 +25,21 @@ There are different ways to create new objects:
 4. Create an object using Object.create().
 
 
-Using an Object Literal
-----------------------------------------
+# Using an Object Literal
+
 
 const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
 
 const persson={}--> empty js objects
 
-we can add proprties
+# we can add proprties
 
 person.firstname="vijay"
 
 person.lastname="sadhuram"
 
-2.Using the JavaScript Keyword new
-------------------------------------------
+# 2.Using the JavaScript Keyword new
+
 keyword-->new Object()
 
 Example:
@@ -65,76 +61,97 @@ Any changes to a copy of an object will also change the original object:
 For example:
 
 const person={
+
 firstname:"vaijay"
+
 age:10;
+
 }
-const x=person;// it referenc if we make chages on the x it will changes on person also
+const x=person;
+
+// it referenc if we make chages on the x it will changes on person also
 
 
-JavaScript Properties
---------------------------------------
-objectname.property// person.age// access the properties
+# JavaScript Properties
+
+objectname.property
+
+// person.age// access the properties
 
 person["age"]
 
 
------------------------
-JavaScript for...in Loop
-------------------------
+# JavaScript for...in Loop
+
 
 
 const person={
+    
     firstname:"vijay",
+    
     lastname:"sadhuram"
+
 }
+
 // const x=person;
 
 // x.firstname="suresh"
+
 // console.log(x);
+
 // console.log(person)
 
 for (let variable in person){
-    console.log( variable);//to name 
-    console.log(person[varible])//to get value or properties
+
+console.log( variable);//to name 
+
+console.log(person[varible]) //to get value or properties
+
 }
 
----------------
-how to add new property
------------------
+
+# how to add new property
 
 person.address="Hyderabad"
 
-Deleting Properties
+# Deleting Properties
 
-delete person.age;
+                                                      delete person.age;
 
-delete person.firstname;
+                                                      delete person.firstname;
 
-console.log(person)
+                                                      console.log(person)
 
 
-ouptput:
+# ouptput :
 
-{ lastname: 'sadhuram' }
+                                                     { lastname: 'sadhuram' }
 
 or
 
-delete person["age"];
---------------------------
-Nested Objects
--------------------------------
+                                                      delete person["age"];
 
-myObj = {
-  name:"John",
-  age:30,
-  cars: {
-    car1:"Ford",
-    car2:"BMW",
-    car3:"Fiat"
-  }
-}
+# Nested Objects
 
+                                                      myObj = {
+  
+                                                     name:"John",
+  
+                                                     age:30,
+  
+                                                     cars: {
+  
+                                                     car1:"Ford",
+  
+                                                     car2:"BMW",
+  
+                                                      car3:"Fiat"
+  
+                                                        }
 
+                                                        }
+                                                      
+                                            
 You can access nested objects using the dot notation or the bracket notation:
 
 myObj.cars.car2;
@@ -144,11 +161,8 @@ or
 myObj[cars][car1];
 
 
+# Local  storage vs Session storage
 
-
-
-Local  storage vs Session storage
-------------------------------------
 const btn=document.getElementById("mybtn");
 
 const myinput=document.getElementById("myInput");
