@@ -77,10 +77,23 @@ Example 2:
 Explanation:
 
 The splice() method returns the removed item(s) in an array and changes the original array. Since we are printing the original array, it will have been modified by the splice method and thus will return ["Mountains", "Sea"]
+                                 
+                                 var cities = ['Hamilton', 'Toronto', 'Vancouver', 'London', 'Brussels', 'Sydney'] 
+                                 /*
+	                                  complete code to:- (write single line each)
+		                                Remove cities to which you cant go
+		                                Add 'Tokyo' at the end
+	                                	Add 'Boston' at the start
+		                                Remove furthest city from the array
+		                                Print the array
+                                  */
+                                    cities.splice(4);
+                                    cities.push('Tokyo');
+                                    cities.unshift('Boston');
+                                    cities.pop();
+                                    console.log(cities)
 
                                        
-                                        
-
                                   
 # JS objects
 
