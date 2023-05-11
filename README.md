@@ -1,5 +1,87 @@
 # JavaScript important topics
 
+# Arrays
+Here are some of the commonly used array operations listed in the official MDN Javascript documentation:-
+
+1. concat(): The concat() method is used to merge two or more arrays. This method does not change the existing arrays but returns a new array.
+
+                                        let a=[1,2,3]; 
+                                        let b=[4,5,6];
+                                        let c=a.concat(b);
+                                        console.log(c)
+                                        
+                                        (6) [1, 2, 3, 4, 5, 6]
+
+ 
+
+2. join(): The join()  method joins all elements of an array into a string and returns this string.
+                                            
+                                            
+                                            
+                                            
+                                            
+                                          
+3. pop(): The pop()  method removes the last element from an array and returns that element. This method changes the length of the array.
+
+ 
+
+4. push(): The push() method adds one or more elements to the end of an array and returns the new length of the array.
+
+ 
+
+5. shift(): The shift() method removes the first element from an array and returns that removed element
+
+                                     let a=[1,2,3];
+                                     let b=[4,5,6];
+                                      a.shift()
+                                    // console.log(c)
+                                     console.log(a)
+                                     
+                                     (2) [2, 3]
+
+6. unshift(): The unshift() method adds one or more elements to the beginning of an array
+
+ 
+
+7. slice(): The slice() method returns a copy of a portion of an array into a new array object. It has two parameters: start and end.  Both the parameters are optional. The start is an integer that tells where to start the selection. If omitted, it acts like "0". The end is an integer that specifies where to end the selection. If omitted, all elements from the start position to the end of the array will be selected.
+                                       let a=[1,2,3,4,5];
+                                       let c=a.slice(0,3);
+                                       console.log(c)
+                                       output
+                                       
+                                       [1, 2, 3]
+ 
+
+8. splice(): The splice() method changes the contents of an array by removing existing elements and/or adding new elements. This method takes three parameters. The first is an index required, whereas the other two parameters are optional. The index is an integer that specifies at what position to add/remove items. The next parameters tell the number of items to be removed. The third parameter is the new items added to the array separated by a comma. 
+                                        
+                                        Syntax:arrays.splice(startindx,NumOfDeletedElem,newElem);
+                                        
+                                        let array=[1,3,4,5,6,7];
+                                        let DeletedArray=array.splice(0,2,9);
+                                        console.log(array):
+                                        console.log(DeletedArray);
+                                        2-count of deleted elemet
+                                        0-starting index;
+                                        9-insert at beginning;
+                                        output:
+                                        [9,4,5,6,7];
+                                        [1,2];
+                                        
+Example 2:                                        
+                                        
+                                        var array = ["Mountains","Sea","Island","Forest","Cave"];
+                                        array.splice(2);
+                                        console.log(array);
+                                        output:
+                                        ["Mountains", "Sea"]
+Explanation:
+
+The splice() method returns the removed item(s) in an array and changes the original array. Since we are printing the original array, it will have been modified by the splice method and thus will return ["Mountains", "Sea"]
+
+                                       
+                                        
+
+                                  
 # JS objects
 
 1.Objects may conatin many value
