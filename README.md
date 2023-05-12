@@ -365,6 +365,66 @@ add proprties
 
 Person.prototype.nationality="indian";
 
+# set
+                                        const set=new Set([1,2,4,5]);
+                                        set.add(9);
+                                       //iterate over the set
+                                        for(let value of set){
+                                       console.log(value)
+                                        }
+
+Example:
+					const set=new Set([1,2,4,5]);
+                                        set.add(9);
+                                       //iterate over the set
+                                       set.forEach((value,index,set)=>{
+                                       console.log(value)
+
+                                       })
+				
+# Map
+        A Map holds key-value pairs where the keys can be any datatype.
+
+A Map remembers the original insertion order of the keys.
+
+                                                 Create map
+						 const fruits = new Map([
+                                                ["apples", 500],
+                                                 ["bananas", 300],
+                                                ["oranges", 200]
+                                                ]);
+
+                                                
+
+                                           //iterate over the map
+                                            fruits.forEach((value,index)=>{
+                                            console.log(index);
+
+                                              })
+
+
+How to Create a Map:
+
+You can create a JavaScript Map by:
+<space> 
+Passing an Array to new Map()
+
+Create a Map and use Map.set()
+<space/>
+The set() Method
+	                              
+	// Create a Map
+        const fruits = new Map();
+
+        // Set Map Values
+        fruits.set("apples", 500);
+        fruits.set("bananas", 300);
+        fruits.set("oranges", 200);
+	fruits.get("apples")//500
+	fruits.delete("apples");
+					
+					
+
 
 
 
