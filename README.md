@@ -346,8 +346,7 @@ output:
 
 { height: 10, wight: 20, sum: [Function: sum] }
 
-Constructor in JS
---------------------------------
+# Constructor in JS
 
 Example:
 
