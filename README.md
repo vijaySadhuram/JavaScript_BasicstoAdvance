@@ -1,4 +1,35 @@
 # JavaScript important topics
+-----------------------------------------
+
+# Hoisting
+ 
+Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during the 
+compilation phase, before the code is executed. This means that you can use variables and call functions before they are actually 
+declared in your code.
+
+
+However, it's important to note that only the declarations are hoisted, not the initializations or assignments. Let's take a look at two examples to illustrate hoisting:
+
+
+Example 1: Variable Hoisting
+
+          console.log(x); // Output: undefined
+	  var x = 10;
+
+In this example, the variable x is declared and assigned a value of 10. However, when we try to log x before its declaration, it doesn't throw an error. Instead, it prints undefined. This is because during hoisting, the declaration var x; is moved to the top of the scope. The variable is created but not yet assigned a value until the actual line x = 10 is reached.
+
+Example 2: Function Hoisting
+
+    greet(); // Output: "Hello!"
+
+    function greet() {
+    console.log("Hello!");
+    }
+    
+In this example, we call the greet function before its actual declaration. Again, this works because during hoisting, the function declaration is moved to the top of the scope. As a result, the function can be called anywhere within the same scope, even before its declaration.
+
+It's worth noting that hoisting applies to both variable and function declarations. However, function declarations take precedence over variable declarations during hoisting. If there are conflicting variable and function declarations with the same name, the function declaration will override the variable declaration.
+
 
 # Arrays
 Here are some of the commonly used array operations listed in the official MDN Javascript documentation:-
@@ -421,6 +452,9 @@ The set() Method
         fruits.set("oranges", 200);
 	fruits.get("apples")//500
 	fruits.delete("apples");
+	
+
+
 					
 					
 
