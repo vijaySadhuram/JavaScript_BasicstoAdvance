@@ -100,11 +100,11 @@ Here are some of the commonly used array operations listed in the official MDN J
                                         
 Example 2:                                        
                                         
-                                        var array = ["Mountains","Sea","Island","Forest","Cave"];
-                                        array.splice(2);
-                                        console.log(array);
-                                        output:
-                                        ["Mountains", "Sea"]
+               var array = ["Mountains","Sea","Island","Forest","Cave"];
+               array.splice(2);
+               console.log(array);
+               output:
+               ["Mountains", "Sea"]
 Explanation:
 
 The splice() method returns the removed item(s) in an array and changes the original array. Since we are printing the original array, it will have been modified by the splice method and thus will return ["Mountains", "Sea"]
