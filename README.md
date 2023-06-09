@@ -242,40 +242,40 @@ person.address="Hyderabad"
 
 # Deleting Properties
 
-                                                      delete person.age;
+        delete person.age;
 
-                                                      delete person.firstname;
+        delete person.firstname;
 
-                                                      console.log(person)
+        console.log(person)
 
 
 # ouptput :
 
-                                                     { lastname: 'sadhuram' }
+      { lastname: 'sadhuram' }
 
-or
+      or
 
-                                                      delete person["age"];
+      delete person["age"];
 
 # Nested Objects
 
-                                                      myObj = {
+      myObj = {
   
-                                                     name:"John",
+      name:"John",
   
-                                                     age:30,
+      age:30,
   
-                                                     cars: {
+      cars: {
   
-                                                     car1:"Ford",
+      car1:"Ford",
   
-                                                     car2:"BMW",
+      car2:"BMW",
   
-                                                      car3:"Fiat"
+      car3:"Fiat"
   
-                                                        }
+      }
 
-                                                        }
+     }
                                                       
                                             
 You can access nested objects using the dot notation or the bracket notation:
