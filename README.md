@@ -1,6 +1,21 @@
 # JavaScript important topics
 -----------------------------------------
 
+# let vs var vs const
+### let Keyword
+Variables defined with **let** cannot be **Redeclared**
+
+Variables defined with let must be **Declared** before use
+
+Variables defined with let have **Block Scope**
+
+With let you can not do this:
+
+      let x = "John Doe";
+      let x = 0;
+
+
+
 # Hoisting
  
 Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during the 
