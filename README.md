@@ -467,7 +467,77 @@ The set() Method
         fruits.set("oranges", 200);
 	fruits.get("apples")//500
 	fruits.delete("apples");
-	
+
+
+**Call , apply and bind method**
+
+ In JavaScript, `call`, `apply`, and `bind` are methods used to manipulate the execution context of a function, allowing you to control what the `this` keyword refers to and how arguments are passed to the function. Let's explore each of these methods:
+
+1. `call`:
+The `call` method is used to invoke a function with a specified `this` value and individual arguments passed one by one.
+
+Syntax:
+```javascript
+functionName.call(thisArg, arg1, arg2, ...);
+```
+
+Example:
+```javascript
+function greet(greeting) {
+  console.log(greeting + ' ' + this.name);
+}
+
+const person = { name: 'John' };
+
+greet.call(person, 'Hello'); // Outputs: Hello John
+```
+
+In this example, the `greet` function is called with the `this` value set to the `person` object, and the argument `'Hello'` is passed to the function.
+
+2. `apply`:
+The `apply` method is similar to `call`, but it takes an array-like object as the second argument to pass the function's arguments.
+
+Syntax:
+```javascript
+functionName.apply(thisArg, [arg1, arg2, ...]);
+```
+
+Example:
+```javascript
+function greet(greeting) {
+  console.log(greeting + ' ' + this.name);
+}
+
+const person = { name: 'John' };
+
+greet.apply(person, ['Hello']); // Outputs: Hello John
+```
+
+In this example, the `greet` function is called with the `this` value set to the `person` object, and the arguments are passed as an array `['Hello']`.
+
+3. `bind`:
+The `bind` method creates a new function with a specified `this` value and any initial arguments. Unlike `call` and `apply`, `bind` doesn't immediately invoke the function but returns a new function that can be executed later.
+
+Syntax:
+```javascript
+const newFunction = functionName.bind(thisArg, arg1, arg2, ...);
+```
+
+Example:
+```javascript
+function greet(greeting) {
+  console.log(greeting + ' ' + this.name);
+}
+
+const person = { name: 'John' };
+
+const greetPerson = greet.bind(person, 'Hello');
+greetPerson(); // Outputs: Hello John
+```
+
+In this example, the `bind` method creates a new function `greetPerson` with the `this` value set to the `person` object and the initial argument `'Hello'`. When `greetPerson` is called, it logs the greeting with the name property of the `person` object.
+
+These methods are useful for managing the context in which functions are executed and are commonly used in various JavaScript applications, especially when dealing with object-oriented programming and asynchronous programming.
 
 
 					
